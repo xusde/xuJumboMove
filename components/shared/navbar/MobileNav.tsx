@@ -19,8 +19,8 @@ const MobileNav = () => {
           <Image
             src="/assets/icons/hamburger.svg"
             alt="mobile menu"
-            width={20}
-            height={20}
+            width={15}
+            height={15}
             className="invert-colors"
           />
         </label>
