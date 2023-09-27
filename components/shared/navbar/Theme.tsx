@@ -1,28 +1,19 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { useTheme } from "@/context/ThemeProvider";
 import Image from "next/image";
 import { themes } from "@/constants";
 const Theme = () => {
-  //   const themeRef = useRef<HTMLDetailsElement>(null);
   const { mode, setMode } = useTheme();
-  console.log(mode);
-
-  //   const handleClick = () => {
-  //     console.log(themeRef.current);
-  //     if (themeRef.current) {
-  //       themeRef.current.removeAttribute("open");
-  //     }
-  //   };
   return (
     <div className="dropdown">
-      <label tabIndex={0} className="btn">
+      <label tabIndex={0} className="btn w-[50px]">
         {mode === "light" ? (
           <Image
             src={"/assets/icons/sun.svg"}
             alt="sun"
-            width={20}
-            height={20}
+            width={25}
+            height={25}
             className="active-theme"
           />
         ) : (
