@@ -6,7 +6,7 @@ import { themes } from "@/constants";
 const Theme = () => {
   const { mode, setMode } = useTheme();
   return (
-    <div className="dropdown">
+    <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn w-[50px]">
         {mode === "light" ? (
           <Image
