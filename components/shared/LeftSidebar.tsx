@@ -10,7 +10,7 @@ const LeftSidebar = () => {
   const pathName = usePathname();
   return (
     <section className="background-light900_dark200 light-border sticky left-0 top-0 flex h-screen flex-col justify-between  overflow-y-auto border-r p-6 pt-36 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
-      <ul className="background-light900_dark200 menu min-h-full w-full gap-4 overflow-y-auto border-none p-4 text-base-content">
+      <ul className="background-light900_dark200 menu flex min-h-full w-full flex-1 flex-col gap-4 overflow-y-auto border-none p-4 text-base-content">
         {sidebarLinks.map((link) => {
           const isActive = pathName.includes(link.route);
           return (
