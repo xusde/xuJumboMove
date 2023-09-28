@@ -15,7 +15,9 @@ const GlobalSearch = () => {
         <span className="badge indicator-item badge-accent dark:text-slate-200">
           Jumbo
         </span>
-        <button className="btn join-item dark:text-slate-400">Search</button>
+        <button className="btn join-item dark:border-slate-500 dark:text-slate-400">
+          Search
+        </button>
       </div>
     </div>
   );
