@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
   const pathName = usePathname();
-  console.log(pathName);
+  // console.log(pathName);
 
   return (
     <div className="drawer sm:hidden">

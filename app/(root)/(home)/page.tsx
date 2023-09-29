@@ -1,4 +1,7 @@
+import HomeFiltertags from "@/components/home/HomeFiltertags";
+import Filter from "@/components/shared/Filter";
 import LocalSearch from "@/components/shared/search/LocalSearch";
+import { HomePageFilters } from "@/constants/filters";
 import Link from "next/link";
 
 export default function Home() {
@@ -19,7 +22,14 @@ export default function Home() {
           iconPosition="left"
           placeholder="Search questions"
         />
+        <Filter
+          filters={HomePageFilters}
+          otherClasses={`sm:min-w-[165px] min-h-[56px]`}
+          containerClasses={"hidden max-md:flex"}
+        />
       </div>
+      <HomeFiltertags />
+      <div className="mt-10 flex w-full flex-col"></div>
     </>
   );
 }
