@@ -4,7 +4,7 @@ import React from "react";
 const HomeFiltertags = () => {
   const active = "newest";
   return (
-    <div className="mt-10 flex flex-wrap gap-4">
+    <div className="mt-10 hidden flex-wrap gap-4 md:flex">
       {HomePageFilters.map((filter) => (
         <button
           className={`btn ${
