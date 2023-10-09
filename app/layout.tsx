@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   title: "xuJumboMoves",
   description:
     "A platform for Jumbo CompSci students to discuss tech questions, get help, and share knowledge.",
+
   icons: {
     icon: "/assets/images/site-logo.svg",
   },
