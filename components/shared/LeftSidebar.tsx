@@ -12,7 +12,9 @@ const LeftSidebar = () => {
     <section className="background-light900_dark200 light-border custom-scrollbar sticky left-0 top-0 flex h-screen flex-col  justify-between overflow-y-auto border-r p-6 pt-32 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
       <ul className="background-light900_dark200 flex w-full flex-col gap-4  border-none p-4 text-base-content ">
         {sidebarLinks.map((link) => {
-          const isActive = pathName.includes(link.route);
+          const isActive =
+            (pathName.includes(link.route) && link.route.length > 1) ||
+            pathName === link.route;
           return (
             <li key={link.label} className="">
               <Link
